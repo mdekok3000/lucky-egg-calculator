@@ -188,7 +188,7 @@ luckyEggApp.controller('LuckyEggController', function LuckyEggController($scope)
             }
             else
             {
-                $scope.pokemon[i].extraNeeded = Math.floor(($pkmn.reqCandy - (candy + quantity)) / (postTransfer ? 4 : 3)) + 1;
+                $scope.pokemon[i].extraNeeded = Math.floor(($pkmn.reqCandy - (candy + quantity)) / 4) + 1;
             }
         
             console.log([$scope.pokemon[i].name,$scope.pokemon[i].evolve]);
